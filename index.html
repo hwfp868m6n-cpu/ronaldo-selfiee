@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلیفی لەگەڵ ڕۆناڵدۆ - مۆندیال 2022</title>
+    <meta name="description" content="سلیفی تایبەت لەگەڵ کریستیانۆ ڕۆناڵدۆ لە مۆندیالی قەتەر 2022">
+    <meta property="og:title" content="سلیفی لەگەڵ ڕۆناڵدۆ - مۆندیال">
+    <meta property="og:description" content="لەژێر چرایی ستادیۆمەکەدا لەگەڵ CR7">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/cb3c0e2f-8b9a-4655-b3cf-20e3bf3625a8.jpeg?auth_key=1882086284-21aaabf8f0c2420db19f25a98250d3d7-0-50ac7971f7f494f92685af0f3564217c">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F5E6A3;
+            --dark: #060606;
+            --green-deep: #0a1f0a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            padding: 16px;
+            position: relative;
+        }
+
+        /* باکگراوندی گەورە */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse at 30% 20%, rgba(212,175,55,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(204,0,0,0.04) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(0,100,0,0.03) 0%, transparent 60%);
+            z-index: 0;
+        }
+
+        .bg-grid {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background-image: 
+                linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 70%);
+        }
+
+        /* پارتیکلەکان */
+        .bg-particles {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatUp 5s ease-in-out infinite;
+        }
+
+        @keyframes floatUp {
+            0% { opacity: 0; transform: translateY(100vh) scale(0); }
+            30% { opacity: 0.6; }
+            100% { opacity: 0; transform: translateY(-10vh) scale(1.5); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 480px;
+            width: 100%;
+        }
+
+        /* بەیج */
+        .top-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--gold), #B8860B, var(--gold));
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+            color: var(--dark);
+            padding: 7px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .title {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .title .highlight {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold), #B8860B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.4);
+            font-size: 13px;
+            font-weight: 300;
+            margin-top: -10px;
+        }
+
+        /* فرەیمی مۆبایل */
+        .phone-frame {
+            position: relative;
+            width: 350px;
+            height: 620px;
+            background: linear-gradient(145deg, #2a2a2a, #111);
+            border-radius: 44px;
+            padding: 10px;
+            box-shadow:
+                inset 0 1px 0 rgba(255,255,255,0.1),
+                0 0 0 1.5px #333,
+                0 25px 80px rgba(0,0,0,0.8),
+                0 0 120px rgba(212,175,55,0.08);
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+
+        .phone-screen {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 36px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        /* ناچ */
+        .phone-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 110px;
+            height: 26px;
+            background: #111;
+            border-radius: 0 0 16px 16px;
+            z-index: 30;
+        }
+
+        .phone-notch::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #1a2a1a;
+            border: 1.5px solid #222;
+        }
+
+        /* فلاش */
+        .flash-overlay {
+            position: absolute;
+            inset: 0;
+            background: #fff;
+            z-index: 50;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.08s ease;
+        }
+
+        .flash-overlay.fire {
+            opacity: 0.9;
+        }
+
+        /* سینەی وێنە */
+        .selfie-scene {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* باکگراوند */
+        .stadium-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(175deg,
+                    #071a07 0%,
+                    #0d2b0d 20%,
+                    #0f330f 35%,
+                    #112e11 50%,
+                    #0d260d 65%,
+                    #081808 80%,
+                    #040e04 100%
+                );
+        }
+
+        /* ڕووناکی ستادیۆم */
+        .stadium-lights {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 120px 80px at 15% 5%, rgba(255,255,200,0.25) 0%, transparent 100%),
+                radial-gradient(ellipse 120px 80px at 85% 5%, rgba(255,255,200,0.25) 0%, transparent 100%),
+                radial-gradient(ellipse 200px 120px at 50% -5%, rgba(255,255,180,0.12) 0%, transparent 100%),
+                radial-gradient(ellipse 80px 60px at 50% 15%, rgba(255,255,200,0.08) 0%, transparent 100%);
+            z-index: 1;
+        }
+
+        /* هێڵەکانی یاریگا */
+        .field {
+            position: absolute;
+            bottom: 0;
+            left: -10%;
+            width: 120%;
+            height: 55%;
+            z-index: 1;
+            background: linear-gradient(to bottom, transparent, rgba(34,120,34,0.15));
+        }
+
+        .field-line-h {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            right: 5%;
+            height: 1.5px;
+            background: rgba(255,255,255,0.07);
+        }
+
+        .field-arc {
+            position: absolute;
+            top: 15%;
+            left: 30%;
+            right: 30%;
+            height: 50%;
+            border: 1.5px solid rgba(255,255,255,0.05);
+            border-bottom: none;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .field-center {
+            position: absolute;
+            top: 42%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        /* کۆنفێتی */
+        .confetti-box { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden; }
+
+        .conf {
+            position: absolute;
+            border-radius: 2px;
+            opacity: 0;
+            animation: confDrop linear infinite;
+        }
+
+        @keyframes confDrop {
+            0% { opacity: 0; transform: translateY(-20px) rotate(0deg) scale(0.5); }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.6; }
+            100% { opacity: 0; transform: translateY(650px) rotate(1080deg) scale(0.3); }
+        }
+
+        /* ڕووناکی چەمکی */
+        .lens-flare {
+            position: absolute;
+            top: 22%;
+            right: 20%;
+            width: 80px;
+            height: 80px;
+            z-index: 8;
+            pointer-events: none;
+            animation: flareGlow 4s ease-in-out infinite;
+        }
+
+        .lens-flare::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle, rgba(255,255,220,0.35) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .lens-flare::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 4px;
+            background: rgba(255,255,200,0.4);
+            border-radius: 50%;
+        }
+
+        @keyframes flareGlow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.4); }
+        }
+
+        /* هەڵەمەت */
+        .crowd {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 90px;
+            z-index: 3;
+            opacity: 0.12;
+        }
+
+        /* لۆگۆی مۆندیال */
+        .wc-logo {
+            position: absolute;
+            top: 36px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 15;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .wc-fifa {
+            font-size: 9px;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        .wc-trophy {
+            font-size: 32px;
+            color: var(--gold);
+            display: block;
+            margin: 2px 0;
+            filter: drop-shadow(0 0 12px rgba(212,175,55,0.4));
+            animation: trophyFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes trophyFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        .wc-qatar {
+            font-size: 9px;
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 4px;
+            font-weight: 300;
+        }
+
+        /* ئاڵای پورتگال */
+        .flag-pt {
+            position: absolute;
+            top: 95px;
+            right: 14px;
+            z-index: 15;
+            width: 28px;
+            height: 18px;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            display: flex;
+        }
+
+        .flag-pt .fg { flex: 2; background: #006600; }
+        .flag-pt .fr { flex: 3; background: #FF0000; }
+
+        .flag-pt .fc {
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            background: #FFCC00;
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0,102,0,0.5);
+        }
+
+        /* کەش و هەوا */
+        .weather {
+            position: absolute;
+            top: 95px;
+            left: 14px;
+            z-index: 15;
+            background: rgba(0,0,0,0.35);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 3px 10px;
+            border-radius: 20px;
+            color: rgba(255,255,255,0.75);
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* وێنەی بەکارهێنەر */
+        .user-pic {
+            position: absolute;
+            left: 8px;
+            bottom: 75px;
+            z-index: 10;
+            width: 140px;
+            height: 190px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.15);
+            transform: rotate(-4deg);
+            animation: userFloat 5s ease-in-out infinite;
+        }
+
+        .user-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        @keyframes userFloat {
+            0%, 100% { transform: rotate(-4deg) translateY(0); }
+            50% { transform: rotate(-2deg) translateY(-6px); }
+        }
+
+        /* ڕۆناڵدۆ SVG */
+        .cr7-wrap {
+            position: absolute;
+            right: -15px;
+            bottom: 55px;
+            z-index: 8;
+            width: 220px;
+            height: 390px;
+            filter: drop-shadow(0 10px 25px rgba(0,0,0,0.6));
+            animation: cr7Breathe 3.5s ease-in-out infinite;
+        }
+
+        @keyframes cr7Breathe {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        /* شوێن و کات */
+        .geo-tag {
+            position: absolute;
+            bottom: 80px;
+            left: 14px;
+            right: 70px;
+            z-index: 15;
+        }
+
+        .geo-loc {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: rgba(255,255,255,0.85);
+            font-size: 11px;
+            font-weight: 600;
+            text-shadow: 0 1px 6px rgba(0,0,0,0.8);
+        }
+
+        .geo-loc i { color: var(--gold); font-size: 10px; }
+
+        .geo-date {
+            color: rgba(255,255,255,0.45);
+            font-size: 10px;
+            margin-top: 1px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+        }
+
+        /* سۆشیال بار */
+        .social-col {
+            position: absolute;
+            bottom: 80px;
+            right: 14px;
+            z-index: 20;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .soc-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 0.25s;
+        }
+
+        .soc-btn:active { transform: scale(0.85); }
+
+        .soc-btn i {
+            font-size: 22px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+            transition: all 0.3s;
+        }
+
+        .soc-btn.liked i.fa-heart { color: #FF2D55; }
+
+        .soc-btn span {
+            font-size: 9px;
+            color: rgba(255,255,255,0.75);
+            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+        }
+
+        /* UI سەرەوە */
+        .status-bar {
+            position: absolute;
+            top: 5px;
+            left: 24px;
+            right: 24px;
+            z-index: 35;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 600;
+            pointer-events: none;
+        }
+
+        /* UI خوارەوە */
+        .cam-bar {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            right: 14px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cam-icon {
+            color: #fff;
+            font-size: 20px;
+            opacity: 0.75;
+            cursor: pointer;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .cam-icon:hover { opacity: 1; transform: scale(1.15); }
+
+        .shutter {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 3.5px solid #fff;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .shutter::after {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            border-radius: 50%;
+            background: #fff;
+            transition: all 0.25s;
+        }
+
+        .shutter:active::after { background: var(--gold); transform: scale(0.85); }
+        .shutter:active { border-color: var(--gold); }
+
+        /* دوگمەکانی دەرەوە */
+        .actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .act-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Noto Sans Arabic', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .act-gold {
+            background: linear-gradient(135deg, var(--gold), #B8860B);
+            color: var(--dark);
+            box-shadow: 0 4px 20px rgba(212,175,55,0.25);
+        }
+
+        .act-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212,175,55,0.45); }
+        .act-gold:active { transform: translateY(0); }
+
+        .act-ghost {
+            background: rgba(255,255,255,0.06);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .act-ghost:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+
+        /* کۆپی لینک */
+        .link-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 8px 14px;
+            width: 100%;
+            max-width: 400px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .link-box:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(212,175,55,0.3);
+        }
+
+        .link-box i { color: var(--gold); font-size: 14px; flex-shrink: 0; }
+
+        .link-box .url-text {
+            flex: 1;
+            color: rgba(255,255,255,0.5);
+            font-size: 12px;
+            direction: ltr;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .link-box .copy-label {
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        /* تۆست */
+        .toast-msg {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: rgba(15,15,15,0.95);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-family: 'Noto Sans Arabic', sans-serif;
+            font-size: 13px;
+            z-index: 999;
+            border: 1px solid rgba(212,175,55,0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            pointer-events: none;
+        }
+
+        .toast-msg.visible {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .toast-msg i { color: var(--gold); }
+
+        /* ئەنیمەیشنی داخلبوون */
+        @keyframes riseIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.85); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .container > * { animation: riseIn 0.7s ease-out backwards; }
+        .container > *:nth-child(1) { animation-delay: 0.05s; }
+        .container > *:nth-child(2) { animation-delay: 0.12s; }
+        .container > *:nth-child(3) { animation-delay: 0.18s; }
+        .container > *:nth-child(4) { animation-delay: 0.35s; }
+        .container > *:nth-child(5) { animation-delay: 0.5s; }
+        .container > *:nth-child(6) { animation-delay: 0.6s; }
+
+        .phone-frame { animation: popIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s backwards; }
+
+        /* ڕیسپۆنسیڤ */
+        @media (max-width: 400px) {
+            .phone-frame { width: 290px; height: 514px; border-radius: 36px; padding: 8px; }
+            .phone-screen { border-radius: 30px; }
+            .title { font-size: 21px; }
+            .cr7-wrap { width: 180px; height: 320px; right: -12px; }
+            .user-pic { width: 115px; height: 155px; left: 5px; }
+        }
+
+        @media (min-height: 900px) {
+            .container { gap: 28px; }
+        }
+
+        /* reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-particles" id="bgP"></div>
+
+    <div class="container">
+        <div class="top-badge">
+            <i class="fas fa-trophy"></i>
+            FIFA WORLD CUP QATAR 2022
+        </div>
+
+        <h1 class="title">سلیفی <span class="highlight">ڕۆناڵدۆ</span> لە مۆندیال</h1>
+        <p class="subtitle">لەژێر چرایی یاریگا لەگەڵ CR7</p>
+
+        <!-- فرەیم -->
+        <div class="phone-frame" id="phoneFrame">
+            <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <div class="flash-overlay" id="flashEl"></div>
+                <div class="status-bar">
+                    <span>9:41</span>
+                    <span style="display:flex;gap:5px;align-items:center;">
+                        <i class="fas fa-signal" style="font-size:9px;"></i>
+                        <i class="fas fa-wifi" style="font-size:9px;"></i>
+                        <i class="fas fa-battery-full" style="font-size:9px;"></i>
+                    </span>
+                </div>
+
+                <div class="selfie-scene">
+                    <div class="stadium-bg"></div>
+                    <div class="stadium-lights"></div>
+                    <div class="field">
+                        <div class="field-line-h"></div>
+                        <div class="field-arc"></div>
+                        <div class="field-center"></div>
+                    </div>
+                    <div class="lens-flare"></div>
+
+                    <div class="confetti-box" id="confBox"></div>
+
+                    <div class="flag-pt">
+                        <div class="fg"></div>
+                        <div class="fr"></div>
+                        <div class="fc"></div>
+                    </div>
+
+                    <div class="weather">
+                        <i class="fas fa-sun" style="color:#FFD700;font-size:10px;"></i>
+                        28°C
+                    </div>
+
+                    <div class="wc-logo">
+                        <div class="wc-fifa">FIFA WORLD CUP</div>
+                        <i class="fas fa-trophy wc-trophy"></i>
+                        <div class="wc-qatar">QATAR 2022</div>
+                    </div>
+
+                    <!-- ڕۆناڵدۆ -->
+                    <svg class="cr7-wrap" viewBox="0 0 220 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="110" cy="378" rx="55" ry="8" fill="rgba(0,0,0,0.25)"/>
+
+                        <!-- پێی چەپ -->
+                        <path d="M80 295 L70 362 L88 362 L96 300Z" fill="#C9A06C"/>
+                        <path d="M70 358 L62 370 L92 370 L88 358Z" fill="#111"/>
+                        <rect x="64" y="368" width="26" height="5" rx="2" fill="#eee"/>
+
+                        <!-- پێی ڕاست -->
+                        <path d="M138 295 L148 362 L132 362 L124 300Z" fill="#C9A06C"/>
+                        <path d="M132 358 L128 370 L155 370 L148 358Z" fill="#111"/>
+                        <rect x="128" y="368" width="26" height="5" rx="2" fill="#eee"/>
+
+                        <!-- شۆرت -->
+                        <path d="M68 248 L62 298 L158 298 L152 248Z" fill="#006600"/>
+                        <path d="M88 248 L86 296 L134 296 L132 248Z" fill="#CC0000"/>
+
+                        <!-- جلی سەرەوە -->
+                        <path d="M65 192 L58 252 L162 252 L155 192Z" fill="#CC0000"/>
+                        <!-- قۆڵ -->
+                        <path d="M65 192 L36 228 L46 234 L70 202Z" fill="#CC0000"/>
+                        <path d="M155 192 L184 228 L174 234 L150 202Z" fill="#CC0000"/>
+                        <!-- دەست -->
+                        <path d="M36 228 L26 248 L42 250 L48 234Z" fill="#C9A06C"/>
+                        <path d="M184 228 L194 248 L178 250 L172 234Z" fill="#C9A06C"/>
+
+                        <!-- ملی -->
+                        <rect x="96" y="150" width="28" height="22" rx="4" fill="#C9A06C"/>
+
+                        <!-- سەر -->
+                        <ellipse cx="110" cy="125" rx="36" ry="40" fill="#C9A06C"/>
+
+                        <!-- قژ -->
+                        <path d="M74 115 Q77 72 110 67 Q143 72 146 115 Q148 95 140 83 Q128 64 110 61 Q92 64 80 83 Q72 95 74 115Z" fill="#111"/>
+                        <path d="M74 115 Q70 128 73 140 Q74 130 75 120Z" fill="#0a0a0a"/>
+                        <path d="M146 115 Q150 128 147 140 Q146 130 145 120Z" fill="#0a0a0a"/>
+                        <path d="M74 115 Q69 135 75 155 Q71 135 73 118Z" fill="#080808"/>
+                        <path d="M146 115 Q151 135 145 155 Q149 135 147 118Z" fill="#080808"/>
+
+                        <!-- چاو -->
+                        <ellipse cx="98" cy="123" rx="5.5" ry="4.5" fill="#fff"/>
+                        <ellipse cx="122" cy="123" rx="5.5" ry="4.5" fill="#fff"/>
+                        <ellipse cx="99" cy="123" rx="3" ry="3" fill="#2C1810"/>
+                        <ellipse cx="123" cy="123" rx="3" ry="3" fill="#2C1810"/>
+                        <circle cx="100" cy="122" r="1" fill="#fff"/>
+                        <circle cx="124" cy="122" r="1" fill="#fff"/>
+
+                        <!-- کەمبڕ -->
+                        <path d="M92 135 Q110 141 128 135" stroke="#7A5A14" stroke-width="1.2" fill="none"/>
+
+                        <!-- لووت -->
+                        <path d="M107 130 Q110 137 113 130" stroke="#B8895E" stroke-width="1.2" fill="none"/>
+
+                        <!-- لێو -->
+                        <path d="M100 145 Q110 152 120 145" stroke="#A34840" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+                        <!-- گوێ -->
+                        <ellipse cx="74" cy="127" rx="4.5" ry="7" fill="#C9A06C"/>
+                        <ellipse cx="74" cy="127" rx="2.5" ry="4.5" fill="#B8895E"/>
+                        <ellipse cx="146" cy="127" rx="4.5" ry="7" fill="#C9A06C"/>
+                        <ellipse cx="146" cy="127" rx="2.5" ry="4.5" fill="#B8895E"/>
+
+                        <!-- رەیش -->
+                        <path d="M104 150 Q103 155 101 158" stroke="#111" stroke-width="0.7" fill="none"/>
+                        <path d="M110 151 Q110 157 110 160" stroke="#111" stroke-width="0.7" fill="none"/>
+                        <path d="M116 150 Q117 155 119 158" stroke="#111" stroke-width="0.7" fill="none"/>
+
+                        <!-- CR7 -->
+                        <text x="110" y="225" font-family="Arial Black, sans-serif" font-size="14" font-weight="900" fill="#FFD700" text-anchor="middle" opacity="0.85">CR7</text>
+                    </svg>
+
+                    <!-- وێنەی بەکارهێنەر -->
+                    <div class="user-pic">
+                        <img src="https://z-cdn-media.chatglm.cn/files/cb3c0e2f-8b9a-4655-b3cf-20e3bf3625a8.jpeg?auth_key=1882086284-21aaabf8f0c2420db19f25a98250d3d7-0-50ac7971f7f494f92685af0f3564217c" alt="Selfie" loading="eager" />
+                    </div>
+
+                    <div class="geo-tag">
+                        <div class="geo-loc">
+                            <i class="fas fa-map-marker-alt"></i>
+                            یاریگای لوزایل، قەتەر
+                        </div>
+                        <div class="geo-date">2022-11-24 &nbsp; 18:00</div>
+                    </div>
+
+                    <div class="social-col">
+                        <div class="soc-btn" id="likeBtn" onclick="doLike()">
+                            <i class="far fa-heart" id="likeIcon"></i>
+                            <span id="likeNum">24.5K</span>
+                        </div>
+                        <div class="soc-btn" onclick="toast('کۆمێنت ئامادەیە')">
+                            <i class="far fa-comment"></i>
+                            <span>1.2K</span>
+                        </div>
+                        <div class="soc-btn" onclick="doShare()">
+                            <i class="far fa-paper-plane"></i>
+                            <span>ناردن</span>
+                        </div>
+                    </div>
+
+                    <div class="cam-bar">
+                        <i class="fas fa-wand-magic-sparkles cam-icon"></i>
+                        <button class="shutter" onclick="doFlash()" aria-label="وێنە بگرە"></button>
+                        <i class="fas fa-camera-rotate cam-icon"></i>
+                    </div>
+
+                    <svg class="crowd" viewBox="0 0 400 90" preserveAspectRatio="none">
+                        <path d="M0,90 L0,55 Q8,38 16,50 Q24,32 32,46 Q40,28 48,42 Q56,24 64,40 Q72,26 80,38 Q88,18 96,36 Q104,24 112,34 Q120,14 128,32 Q136,22 144,36 Q152,16 160,34 Q168,22 176,38 Q184,18 192,36 Q200,24 208,40 Q216,26 224,42 Q232,28 240,48 Q248,32 256,50 Q264,38 272,52 Q280,36 288,54 Q296,42 304,56 Q312,38 320,58 Q328,44 336,60 Q344,46 352,62 Q360,50 368,65 Q376,52 384,68 Q392,56 400,65 L400,90Z" fill="#000"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- دوگمەکان -->
+        <div class="actions">
+            <button class="act-btn act-gold" onclick="doFlash()">
+                <i class="fas fa-camera"></i>
+                فلاش بکە
+            </button>
+            <button class="act-btn act-ghost" onclick="doShare()">
+                <i class="fas fa-share-alt"></i>
+                هاوبەش بکە
+            </button>
+        </div>
+
+        <!-- لینکی هاوبەش کردن -->
+        <div class="link-box" onclick="copyLink()" id="linkBox" role="button" tabindex="0" aria-label="کۆپی کردنەوەی لینک">
+            <i class="fas fa-link"></i>
+            <span class="url-text" id="urlDisplay"></span>
+            <span class="copy-label" id="copyLabel">کۆپی</span>
+        </div>
+    </div>
+
+    <!-- تۆست -->
+    <div class="toast-msg" id="toastEl">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastTxt"></span>
+    </div>
+
+    <script>
+        // نیشاندانی URL
+        document.getElementById('urlDisplay').textContent = window.location.href;
+
+        // پارتیکلەکانی باکگراوند
+        (function() {
+            const box = document.getElementById('bgP');
+            for (let i = 0; i < 25; i++) {
+                const d = document.createElement('div');
+                d.className = 'particle';
+                d.style.left = Math.random() * 100 + '%';
+                d.style.animationDelay = (Math.random() * 5) + 's';
+                d.style.animationDuration = (4 + Math.random() * 4) + 's';
+                const s = 2 + Math.random() * 3;
+                d.style.width = s + 'px';
+                d.style.height = s + 'px';
+                box.appendChild(d);
+            }
+        })();
+
+        // کۆنفێتی
+        (function() {
+            const box = document.getElementById('confBox');
+            const cols = ['#D4AF37','#FF0000','#006600','#fff','#FFD700','#FF6B35','#00A86B'];
+            for (let i = 0; i < 18; i++) {
+                const c = document.createElement('div');
+                c.className = 'conf';
+                c.style.left = Math.random() * 100 + '%';
+                c.style.top = '-10px';
+                c.style.backgroundColor = cols[Math.floor(Math.random() * cols.length)];
+                c.style.animationDelay = (Math.random() * 4) + 's';
+                c.style.animationDuration = (3 + Math.random() * 4) + 's';
+                const w = 4 + Math.random() * 7;
+                c.style.width = w + 'px';
+                c.style.height = (Math.random() > 0.5 ? w : w * 0.5) + 'px';
+                c.style.borderRadius = Math.random() > 0.4 ? '50%' : '1px';
+                box.appendChild(c);
+            }
+        })();
+
+        // فلاش
+        function doFlash() {
+            const el = document.getElementById('flashEl');
+            el.classList.add('fire');
+            setTimeout(() => el.classList.remove('fire'), 120);
+            toast('وێنەکە تۆمارکرا!');
+        }
+
+        // لایک
+        let isLiked = false;
+        function doLike() {
+            isLiked = !isLiked;
+            const btn = document.getElementById('likeBtn');
+            const ico = document.getElementById('likeIcon');
+            const num = document.getElementById('likeNum');
+            if (isLiked) {
+                ico.className = 'fas fa-heart';
+                btn.classList.add('liked');
+                num.textContent = '24.6K';
+                ico.style.transform = 'scale(1.5)';
+                setTimeout(() => ico.style.transform = 'scale(1)', 250);
+            } else {
+                ico.className = 'far fa-heart';
+                btn.classList.remove('liked');
+                num.textContent = '24.5K';
+            }
+        }
+
+        // هاوبەش کردن
+        function doShare() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'سلیفی لەگەڵ ڕۆناڵدۆ - مۆندیال 2022',
+                    text: 'سلیفی تایبەتم لەگەڵ کریستیانۆ ڕۆناڵدۆ لە مۆندیالی قەتەر!',
+                    url: window.location.href
+                }).catch(() => {});
+            } else {
+                copyLink();
+            }
+        }
+
+        // کۆپی لینک
+        function copyLink() {
+            const url = window.location.href;
+            const label = document.getElementById('copyLabel');
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(() => {
+                    label.textContent = 'کۆپی کرا!';
+                    toast('لینکەکە کۆپی کرایەوە');
+                    setTimeout(() => label.textContent = 'کۆپی', 2000);
+                }).catch(() => fallbackCopy(url, label));
+            } else {
+                fallbackCopy(url, label);
+            }
+        }
+
+        function fallbackCopy(text, label) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+                document.execCommand('copy');
+                label.textContent = 'کۆپی کرا!';
+                toast('لینکەکە کۆپی کرایەوە');
+                setTimeout(() => label.textContent = 'کۆپی', 2000);
+            } catch (e) {
+                toast('هەڵە ڕوویدا، دوبارە هەوڵ بدەرەوە');
+            }
+            document.body.removeChild(ta);
+        }
+
+        // تۆست
+        let toastTimer;
+        function toast(msg) {
+            const el = document.getElementById('toastEl');
+            const txt = document.getElementById('toastTxt');
+            txt.textContent = msg;
+            el.classList.add('visible');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => el.classList.remove('visible'), 2400);
+        }
+
+        // 3D ماوس
+        const frame = document.getElementById('phoneFrame');
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReduced) {
+            frame.addEventListener('mousemove', (e) => {
+                const r = frame.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - 0.5;
+                const y = (e.clientY - r.top) / r.height - 0.5;
+                frame.style.transform = 'perspective(800px) rotateY(' + (x * 10) + 'deg) rotateX(' + (-y * 10) + 'deg)';
+            });
+
+            frame.addEventListener('mouseleave', () => {
+                frame.style.transition = 'transform 0.5s ease';
+                frame.style.transform = 'perspective(800px) rotateY(0) rotateX(0)';
+                setTimeout(() => frame.style.transition = '', 500);
+            });
+        }
+
+        // کیبۆرد بۆ لینک بۆکس
+        document.getElementById('linkBox').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                copyLink();
+            }
+        });
+    </script>
+</body>
+</html>
